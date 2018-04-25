@@ -1,0 +1,19 @@
+debian-targets.patch
+man-section.patch
+no-symbolic.patch
+pic.patch
+c_rehash-compat.patch
+#padlock_conf.patch
+#tls1_2_default.patch
+testsuite_race.patch
+0001-aes-asm-aes-armv4-bsaes-armv7-.pl-make-it-work-with-.patch
+
+# s390x CPACF enchancements
+c0dba2cca4d2bf3526d90a2050bdb17148ce803f.patch
+bc4e831ccd81a1d22a7462df645c884ce33ea7c0.patch
+1c3a23e44648524755b74595ad816f5cc881102c.patch
+e21a84308c02df63715f8867beb4a2b1036bcb35.patch
+96530eea93d27e536f4e93956256cf8dcda7d469.patch
+CVE-2017-3738.patch
+CVE-2018-0739.patch
+rehash-pass-on-dupes.patch

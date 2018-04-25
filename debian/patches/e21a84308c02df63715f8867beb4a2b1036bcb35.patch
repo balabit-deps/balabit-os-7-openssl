@@ -1,0 +1,36 @@
+From e21a84308c02df63715f8867beb4a2b1036bcb35 Mon Sep 17 00:00:00 2001
+From: Patrick Steuer <patrick.steuer@de.ibm.com>
+Date: Tue, 24 Oct 2017 13:29:40 +0200
+Subject: [PATCH] crypto/aes/asm/aes-s390x.pl: replace decrypt flag by macro.
+
+Signed-off-by: Patrick Steuer <patrick.steuer@de.ibm.com>
+
+Reviewed-by: Andy Polyakov <appro@openssl.org>
+Reviewed-by: Tim Hudson <tjh@openssl.org>
+(Merged from https://github.com/openssl/openssl/pull/4634)
+---
+ crypto/aes/asm/aes-s390x.pl | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/crypto/aes/asm/aes-s390x.pl b/crypto/aes/asm/aes-s390x.pl
+index cfbe1321320..bab566223bc 100644
+--- a/crypto/aes/asm/aes-s390x.pl
++++ b/crypto/aes/asm/aes-s390x.pl
+@@ -1086,7 +1086,7 @@ ()
+ 	lhi	$t1,16
+ 	cr	$t0,$t1
+ 	jl	.Lgo
+-	oill	$t0,0x80	# set "decrypt" bit
++	oill	$t0,S390X_DECRYPT	# set "decrypt" bit
+ 	st	$t0,240($key)
+ 	br	$ra
+ ___
+@@ -1225,7 +1225,7 @@ ()
+ .align	16
+ .Lkmc_truncated:
+ 	ahi	$key,-1		# it's the way it's encoded in mvc
+-	tmll	%r0,0x80
++	tmll	%r0,S390X_DECRYPT
+ 	jnz	.Lkmc_truncated_dec
+ 	lghi	%r1,0
+ 	stg	%r1,16*$SIZE_T($sp)
