@@ -7115,6 +7115,7 @@ our %unified_info = (
                     "ssl/s3_lib.o",
                     "ssl/s3_msg.o",
                     "ssl/ssl_asn1.o",
+                    "ssl/ssl_balabit.o",
                     "ssl/ssl_cert.o",
                     "ssl/ssl_ciph.o",
                     "ssl/ssl_conf.o",
@@ -7202,6 +7203,10 @@ our %unified_info = (
             "ssl/ssl_asn1.o" =>
                 [
                     "ssl/ssl_asn1.c",
+                ],
+            "ssl/ssl_balabit.o" =>
+                [
+                    "ssl/ssl_balabit.c",
                 ],
             "ssl/ssl_cert.o" =>
                 [

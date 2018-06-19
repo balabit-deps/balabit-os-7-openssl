@@ -1672,6 +1672,9 @@ __owur const char *SSL_alert_type_string_long(int value);
 __owur const char *SSL_alert_type_string(int value);
 __owur const char *SSL_alert_desc_string_long(int value);
 __owur const char *SSL_alert_desc_string(int value);
+#ifdef BALABIT_WANT_SSL_SEND_ALERT
+int SSL_send_alert(SSL *s, int level, int desc);
+#endif
 
 void SSL_set_client_CA_list(SSL *s, STACK_OF(X509_NAME) *name_list);
 void SSL_CTX_set_client_CA_list(SSL_CTX *ctx, STACK_OF(X509_NAME) *name_list);

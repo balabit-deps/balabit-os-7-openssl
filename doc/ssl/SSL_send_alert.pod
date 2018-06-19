@@ -1,0 +1,25 @@
+=pod
+
+=head1 NAME
+
+SSL_send_alert - send SSL alert - do not use this API
+
+=head1 SYNOPSIS
+
+ #define BALABIT_WANT_SSL_SEND_ALERT
+ #include <openssl/ssl.h>
+
+ int SSL_send_alert(SSL *s, int level, int desc);
+
+=head1 DESCRIPTION
+
+The internal ssl_send_alert API just pinned out for Balabit's
+use-case, DO NOT USE THIS API!
+
+=over 3
+
+=head1 COPYRIGHT
+
+Copyright 2000-2018 Balabit. All Rights Reserved.
+
+=cut
