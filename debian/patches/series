@@ -17,3 +17,9 @@ e21a84308c02df63715f8867beb4a2b1036bcb35.patch
 CVE-2017-3738.patch
 CVE-2018-0739.patch
 rehash-pass-on-dupes.patch
+CVE-2018-0495.patch
+CVE-2018-0732.patch
+CVE-2018-0737-1.patch
+CVE-2018-0737-2.patch
+CVE-2018-0737-3.patch
+CVE-2018-0737-4.patch
