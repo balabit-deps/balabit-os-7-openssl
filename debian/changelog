@@ -1,3 +1,10 @@
+openssl (1.1.0g-2ubuntu4-bb58) bionic; urgency=medium
+
+  * debian/patches/rehash-pass-on-dupes.patch: Don't return 1 when a duplicate
+    certificate is found. (LP: #1764848)
+
+ -- Oliver Pinter <oliver.pinter@balabit.com>  Tue, 03 Jul 2018 17:12:30 +0200
+
 openssl (1.1.0g-2ubuntu4) bionic; urgency=medium
 
   * debian/patches/rehash-pass-on-dupes.patch: Don't return 1 when a duplicate
