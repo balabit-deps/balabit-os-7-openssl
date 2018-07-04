@@ -1,15 +1,32 @@
-openssl (1.1.0g-2ubuntu4bb1) bionic; urgency=medium
+openssl (1.1.0g-2ubuntu4.1bb1) bionic; urgency=medium
 
-  * fix revision
+  * Merge 1.1.0g-2ubuntu4.1
 
- -- KOVACS Krisztian <hidden@balabit.com>  Wed, 04 Jul 2018 10:23:04 +0200
+ -- KOVACS Krisztian <hidden@balabit.com>  Wed, 04 Jul 2018 11:22:57 +0200
 
-openssl (1.1.0g-2ubuntu4-bb58) bionic; urgency=medium
+openssl (1.1.0g-2ubuntu4.1) bionic-security; urgency=medium
 
-  * debian/patches/rehash-pass-on-dupes.patch: Don't return 1 when a duplicate
-    certificate is found. (LP: #1764848)
+  * SECURITY UPDATE: ECDSA key extraction side channel
+    - debian/patches/CVE-2018-0495.patch: add blinding to an ECDSA
+      signature in crypto/ec/ecdsa_ossl.c.
+    - CVE-2018-0495
+  * SECURITY UPDATE: denial of service via long prime values
+    - debian/patches/CVE-2018-0732.patch: reject excessively large primes
+      in DH key generation in crypto/dh/dh_key.c.
+    - CVE-2018-0732
+  * SECURITY UPDATE: RSA cache timing side channel attack
+    - debian/patches/CVE-2018-0737-1.patch: replaced variable-time GCD in
+      crypto/rsa/rsa_gen.c.
+    - debian/patches/CVE-2018-0737-2.patch: used ERR set/pop mark in
+      crypto/rsa/rsa_gen.c.
+    - debian/patches/CVE-2018-0737-3.patch: consttime flag changed in
+      crypto/rsa/rsa_gen.c.
+    - debian/patches/CVE-2018-0737-4.patch: ensure BN_mod_inverse and
+      BN_mod_exp_mont both get called with BN_FLG_CONSTTIME flag set in
+      crypto/rsa/rsa_gen.c.
+    - CVE-2018-0737
 
- -- Oliver Pinter <oliver.pinter@balabit.com>  Tue, 03 Jul 2018 17:12:30 +0200
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 20 Jun 2018 07:29:12 -0400
 
 openssl (1.1.0g-2ubuntu4) bionic; urgency=medium
 
