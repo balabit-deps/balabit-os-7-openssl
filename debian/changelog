@@ -1,3 +1,9 @@
+openssl (1.1.0g-2ubuntu4bb1) bionic; urgency=medium
+
+  * fix revision
+
+ -- KOVACS Krisztian <hidden@balabit.com>  Wed, 04 Jul 2018 10:23:04 +0200
+
 openssl (1.1.0g-2ubuntu4-bb58) bionic; urgency=medium
 
   * debian/patches/rehash-pass-on-dupes.patch: Don't return 1 when a duplicate
