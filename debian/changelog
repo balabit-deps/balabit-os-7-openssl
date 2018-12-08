@@ -1,3 +1,9 @@
+openssl (1.1.0g-2ubuntu4.3bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 08 Dec 2018 04:21:50 +0100
+
 openssl (1.1.0g-2ubuntu4.3) bionic-security; urgency=medium
 
   * SECURITY UPDATE: PortSmash side channel attack
