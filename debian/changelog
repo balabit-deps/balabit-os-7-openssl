@@ -1,3 +1,26 @@
+openssl (1.1.0g-2ubuntu4.3) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: PortSmash side channel attack
+    - debian/patches/CVE-2018-5407-*.patch: add large number of upstream
+      commits to resolve this issue.
+    - CVE-2018-5407
+  * SECURITY UPDATE: timing side channel attack in DSA
+    - debian/patches/CVE-2018-0734-1.patch: fix mod inverse in
+      crypto/dsa/dsa_ossl.c.
+    - debian/patches/CVE-2018-0734-2.patch: fix timing vulnerability in
+      crypto/dsa/dsa_ossl.c.
+    - debian/patches/CVE-2018-0734-3.patch: add a constant time flag in
+      crypto/dsa/dsa_ossl.c.
+    - CVE-2018-0734
+  * SECURITY UPDATE: timing side channel attack in ECDSA
+    - debian/patches/CVE-2018-0735-1.patch: fix timing vulberability in
+      crypto/ec/ec_mult.c.
+    - debian/patches/CVE-2018-0735-2.patch: remove brace from bad
+      cherry-pick in crypto/ec/ec_mult.c.
+    - CVE-2018-0735
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 05 Dec 2018 10:59:52 -0500
+
 openssl (1.1.0g-2ubuntu4.1bb1) bionic; urgency=medium
 
   * Merge 1.1.0g-2ubuntu4.1
