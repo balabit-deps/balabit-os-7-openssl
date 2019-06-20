@@ -1,3 +1,11 @@
+openssl (1.1.1-1ubuntu2.1~18.04.4) bionic; urgency=medium
+
+  * Import libraries/restart-without-asking as used in postinst, to
+    prevent failure to configure the package without debconf database.
+    LP: #1832919
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 20 Jun 2019 18:36:28 +0100
+
 openssl (1.1.1-1ubuntu2.1~18.04.3) bionic; urgency=medium
 
   * Fix path to Xorg for reboot notifications on desktop. LP: #1832421
