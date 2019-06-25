@@ -1,3 +1,11 @@
+openssl (1.1.1-1ubuntu2.1~18.04.3) bionic; urgency=medium
+
+  * Fix path to Xorg for reboot notifications on desktop. LP: #1832421
+  * Cherrypick upstream fix to allow succesful init of libssl and
+    libcrypto using separate calls with different options. LP: #1832659
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Fri, 14 Jun 2019 13:50:28 +0100
+
 openssl (1.1.1-1ubuntu2.1~18.04.2bb1) bionic; urgency=medium
 
   * Balabit patched version

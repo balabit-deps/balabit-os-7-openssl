@@ -216,7 +216,7 @@ then
 
 	# Only issue the reboot notification for servers; we proxy this by
 	# testing that the X server is not running (LP: #244250)
-	if ! pidof /usr/bin/X > /dev/null && [ -x /usr/share/update-notifier/notify-reboot-required ]; then
+	if ! pidof /usr/lib/xorg/Xorg > /dev/null && [ -x /usr/share/update-notifier/notify-reboot-required ]; then
 		/usr/share/update-notifier/notify-reboot-required
 	fi
 
