@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.3bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Tue, 25 Jun 2019 16:00:34 +0200
+
 openssl (1.1.1-1ubuntu2.1~18.04.3) bionic; urgency=medium
 
   * Fix path to Xorg for reboot notifications on desktop. LP: #1832421
