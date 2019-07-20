@@ -60,3 +60,32 @@ msgstr "Aşağıdaki hizmetler OpenSSL kitaplıkları yükseltilirken yeniden ba
 msgid "You will need to start these manually by running '/etc/init.d/<service> start'."
 msgstr " '/etc/init.d/<hizmet> start' komutunu çalıştırarak bu hizmetleri elle başlatmalısınız."
 
+
+#. Type: boolean
+#. Description
+#: ../debhelper.in/libc.templates:5001
+msgid "Restart services during package upgrades without asking?"
+msgstr ""
+"Hizmetler paket yükseltme işlemi esnasında size sorulmadan yeniden "
+"başlatılsın mı?"
+
+#. Type: boolean
+#. Description
+#: ../debhelper.in/libc.templates:5001
+msgid ""
+"There are services installed on your system which need to be restarted when "
+"certain libraries, such as libpam, libc, and libssl, are upgraded. Since "
+"these restarts may cause interruptions of service for the system, you will "
+"normally be prompted on each upgrade for the list of services you wish to "
+"restart.  You can choose this option to avoid being prompted; instead, all "
+"necessary restarts will be done for you automatically so you can avoid being "
+"asked questions on each library upgrade."
+msgstr ""
+"Sisteminizde libpam, libc ve libssl gibi bazı kitaplıklar yükseltildiğinde "
+"yeniden başlatılması gereken bazı hizmetler kurulu. Yeniden başlatma "
+"işlemleri sisteminizin sunduğu hizmetlerde kesintilere neden olabileceğinden "
+"dolayı her yükseltme işlemi esnasında yeniden başlatmak istediğiniz "
+"hizmetler size sorulacaktır. Eğer bu sorunun sorulmasını istemiyorsanız bu "
+"seçeneği kullanabilirsiniz. Bu seçenek seçildiği takdirde bir kitaplık "
+"yükseltmesi yapılırken gereken tüm yeniden başlatma işlemleri size "
+"sorulmaksızın otomatik olarak yapılacaktır."
