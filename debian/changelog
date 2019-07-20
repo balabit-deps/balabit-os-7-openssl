@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.4bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 20 Jul 2019 04:27:56 +0200
+
 openssl (1.1.1-1ubuntu2.1~18.04.4) bionic; urgency=medium
 
   * Import libraries/restart-without-asking as used in postinst, to
