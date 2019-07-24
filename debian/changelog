@@ -1,3 +1,16 @@
+openssl (1.1.1-1ubuntu2.1~18.04.4bb2) bionic; urgency=medium
+
+  * Applied upstream patch for rsa vs rsaEncryption algorithm fix:
+    From c25ae0fff78cb3cb784ef79167329d5cd55b62de Mon Sep 17 00:00:00 2001
+    From: Bernd Edlinger <bernd.edlinger@hotmail.de>
+    Date: Thu, 27 Dec 2018 22:18:21 +0100
+    Subject: [PATCH] Fix cert with rsa instead of rsaEncryption as public key algorithm
+
+    Reviewed-by: Kurt Roeckx <kurt@roeckx.be>
+    (Merged from https://github.com/openssl/openssl/pull/7962)
+
+ -- Balabit Platform Team <devnull@dev.null>  Wed, 24 Jul 2019 10:56:54 +0200
+
 openssl (1.1.1-1ubuntu2.1~18.04.4bb1) bionic; urgency=medium
 
   * Balabit patched version
