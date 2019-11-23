@@ -1,3 +1,11 @@
+openssl (1.1.1-1ubuntu2.1~18.04.5) bionic-security; urgency=medium
+
+  * debian/patches/OPENSSL_malloc_init_hang.patch: make
+    OPENSSL_malloc_init() a no-op to remove a potential infinite loop that
+    can occur in some situations, such as with MySQL 5.7 on s390x.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 12 Nov 2019 11:58:35 -0500
+
 openssl (1.1.1-1ubuntu2.1~18.04.4bb2) bionic; urgency=medium
 
   * Applied upstream patch for rsa vs rsaEncryption algorithm fix:
