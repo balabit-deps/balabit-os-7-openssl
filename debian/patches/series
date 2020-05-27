@@ -13,3 +13,7 @@ CVE-2018-0735.patch
 f426625b6ae9a7831010750490a5f0ad689c5ba3.patch
 f725fe5b4b6504df08e30f5194d321c3025e2336.patch
 OPENSSL_malloc_init_hang.patch
+CVE-2019-1547.patch
+CVE-2019-1549.patch
+CVE-2019-1551.patch
+CVE-2019-1563.patch
