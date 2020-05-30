@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.6bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 30 May 2020 04:23:32 +0200
+
 openssl (1.1.1-1ubuntu2.1~18.04.6) bionic-security; urgency=medium
 
   * SECURITY UPDATE: ECDSA remote timing attack
