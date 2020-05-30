@@ -1,3 +1,30 @@
+openssl (1.1.1-1ubuntu2.1~18.04.6) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: ECDSA remote timing attack
+    - debian/patches/CVE-2019-1547.patch: for ECC parameters with NULL or
+      zero cofactor, compute it in crypto/ec/ec_lib.c.
+    - CVE-2019-1547
+  * SECURITY UPDATE: Fork Protection
+    - debian/patches/CVE-2019-1549.patch: ensure fork-safety without using
+      a pthread_atfork handler in crypto/include/internal/rand_int.h,
+      crypto/init.c, crypto/rand/drbg_lib.c, crypto/rand/rand_lcl.h,
+      crypto/rand/rand_lib.c, crypto/threads_none.c,
+      crypto/threads_pthread.c, crypto/threads_win.c,
+      include/internal/cryptlib.h, test/drbgtest.c.
+    - CVE-2019-1549
+  * SECURITY UPDATE: rsaz_512_sqr overflow bug on x86_64
+    - debian/patches/CVE-2019-1551.patch: fix an overflow bug in
+      rsaz_512_sqr in crypto/bn/asm/rsaz-x86_64.pl.
+    - CVE-2019-1551
+  * SECURITY UPDATE: Padding Oracle issue
+    - debian/patches/CVE-2019-1563.patch: fix a padding oracle in
+      PKCS7_dataDecode and CMS_decrypt_set1_pkey in crypto/cms/cms_env.c,
+      crypto/cms/cms_lcl.h, crypto/cms/cms_smime.c,
+      crypto/pkcs7/pk7_doit.c.
+    - CVE-2019-1563
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 27 May 2020 15:15:54 -0400
+
 openssl (1.1.1-1ubuntu2.1~18.04.5bb1) bionic; urgency=medium
 
   * Balabit patched version
