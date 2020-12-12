@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.7bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 12 Dec 2020 04:29:26 +0100
+
 openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium
 
   * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref
