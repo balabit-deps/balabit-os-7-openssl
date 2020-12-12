@@ -1,3 +1,27 @@
+openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref
+    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for
+      DirectoryString in crypto/x509v3/v3_genn.c.
+    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName
+      in crypto/x509v3/v3_genn.c.
+    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE
+      types don't use implicit tagging in crypto/asn1/asn1_err.c,
+      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,
+      include/openssl/asn1err.h.
+    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting
+      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,
+      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,
+      include/openssl/asn1err.h.
+    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp
+      in test/v3nametest.c.
+    - debian/patches/CVE-2020-1971-6.patch: add a test for
+      encoding/decoding using an invalid ASN.1 Template in
+      test/asn1_decode_test.c, test/asn1_encode_test.c.
+    - CVE-2020-1971
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:54:45 -0500
+
 openssl (1.1.1-1ubuntu2.1~18.04.6bb1) bionic; urgency=medium
 
   * Balabit patched version
