@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.8bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 20 Feb 2021 04:27:48 +0100
+
 openssl (1.1.1-1ubuntu2.1~18.04.8) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Integer overflow in CipherUpdate
