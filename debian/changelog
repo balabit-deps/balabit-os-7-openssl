@@ -1,3 +1,9 @@
+openssl (1.1.1-1ubuntu2.1~18.04.9bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Thu, 25 Mar 2021 19:23:55 +0100
+
 openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium
 
   * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing
