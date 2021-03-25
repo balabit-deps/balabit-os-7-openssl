@@ -1,3 +1,20 @@
+openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing
+    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in
+      ssl/statem/extensions.c.
+    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt
+      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.
+    - debian/patches/CVE-2021-3449-3.patch: add a test to
+      test/recipes/70-test_renegotiation.t.
+    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are
+      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,
+      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,
+      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.
+    - CVE-2021-3449
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:42:42 -0400
+
 openssl (1.1.1-1ubuntu2.1~18.04.8bb1) bionic; urgency=medium
 
   * Balabit patched version
